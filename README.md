@@ -21,9 +21,9 @@ git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 git config --global --list
 ```
-**Some tutorial you may need:**
-[Using Git with Visual Studio Code](https://www.youtube.com/watch?v=i_23KUAEtUM)
-[Editing Code on your Raspberry Pi Remotely with VS Code](https://www.youtube.com/watch?v=jvi1nmKK81Y)
+**Some tutorial you may need:**<br>
+[Using Git with Visual Studio Code](https://www.youtube.com/watch?v=i_23KUAEtUM)<br>
+[Editing Code on your Raspberry Pi Remotely with VS Code](https://www.youtube.com/watch?v=jvi1nmKK81Y)<br>
 
 
 ## License

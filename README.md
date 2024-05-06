@@ -13,7 +13,16 @@ _@Our Groupmembers_
 Simply put, create repositories for the parts you're responsible for, and then push them up.
 - Local git commit
 - Create remote repository in Github here
-- Add remote in your IDE and push
+- Add remote in your IDE, remote name origin and push
+
+**Some command you may need:**
+```sh
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git config --global --list
+```
+**Some tutorial you may need:**<br>
+https://www.youtube.com/watch?v=i_23KUAEtUM
 
 
 ## License

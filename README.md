@@ -25,6 +25,30 @@ git config --global --list
 [Using Git with Visual Studio Code](https://www.youtube.com/watch?v=i_23KUAEtUM)<br>
 [Editing Code on your Raspberry Pi Remotely with VS Code](https://www.youtube.com/watch?v=jvi1nmKK81Y)<br>
 
+## Installation Guide
+### Setting up Wi-Fi connection to eduroam
+When you are trying to connect to eduroam WiFi on Raspberry Pi,  you will see the WiFi access point is greyed out on Raspberry Pi. It is because Raspberry Pi is using the simple network service on the GUI, which doesn't support WPA2 enterprise WiFi. And eduroam is using WPA2 enterprise.
+However, Raspberry Pi is supporting WPA2 enterprise WiFi. And the simplest way to setup the connection on Raspberry Pi is using `wpa_supplicant.conf` file.
+Type this in your terminal
+```sh
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+And type these content
+```sh
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev update_config=1
+country=CA
+network={
+    ssid="eduroam"
+    scan_ssid=1
+    proto=RSN
+    key_mgmt=WPA-EAP
+    eap=РЕАР
+    identity="w12345@campus.nscc.ca" password="12345"  #change to your W number and password
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2" -
+    priority=8
+```
+Then Press Ctrl+O to save and Ctrl+X to exit and reboot RPi.
 
 ## License
 

@@ -7,6 +7,10 @@ This is our summer 2024 work term project in NSCC IT campus, which is a Raspberr
 - API-Server
 - Motor-Control-Part
 
+
+![System Architecture Diagram](https://raw.githubusercontent.com/WT-VirtualPresenceRobot/Introduction/main/diagram.png )
+<p align="center">System Architecture Diagram</p>
+
 ## Usage 
 _@Our Groupmembers_
 
